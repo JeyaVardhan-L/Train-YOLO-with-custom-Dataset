@@ -1,0 +1,31 @@
+# Hyperparameter and training configuration for YOLO11 Aerial Object Detection
+
+task: detect
+mode: train
+model: yolo11s.pt         # Pretrained base model: yolo11n.pt, yolo11s.pt, or yolo11m.pt
+data: configs/data.yaml    # Dataset configuration path
+epochs: 60                 # Training epochs (experiments showed convergence at ~50-60 epochs)
+batch: 16                  # Batch size (adjust based on GPU VRAM)
+imgsz: 640                 # Input image resolution
+patience: 10               # Early stopping patience
+device: null               # Device to run on (e.g. 0, 0,1, or cpu)
+workers: 8                 # Dataloader worker threads
+
+# Optimization & Hyperparameters
+optimizer: auto
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+
+# Loss Gains
+box: 7.5
+cls: 0.5
+dfl: 1.5
+
+# Augmentation & Logging
+plots: true
+save: true
+project: runs/detect
+name: train

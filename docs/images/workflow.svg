@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Workflow for training YOLO on your own dataset</title>
+  <desc id="d">Eight steps in two rows: plan, collect and label, layout and check, split by group, train, evaluate, improve, use. An arrow follows each step.</desc>
+  <style>
+    .bg { fill: #fbfaf7; stroke: #cfcac1; stroke-width: 2; }
+    .title { font: 700 40px 'Segoe UI', Inter, Arial, sans-serif; fill: #1f1f1f; }
+    .sub { font: 400 20px 'Segoe UI', Inter, Arial, sans-serif; fill: #55524c; }
+    .box { fill: #ffffff; stroke: #cfcac1; stroke-width: 2; }
+    .key { fill: #fff4ee; stroke: #ff682c; stroke-width: 3; }
+    .num { font: 700 20px Consolas, 'Courier New', monospace; fill: #816729; }
+    .name { font: 700 24px 'Segoe UI', Inter, Arial, sans-serif; fill: #1f1f1f; }
+    .what { font: 400 17px 'Segoe UI', Inter, Arial, sans-serif; fill: #55524c; }
+    .arrow { stroke: #8a857b; stroke-width: 3; fill: none; }
+    .head { fill: #8a857b; }
+    .note { font: 400 16px 'Segoe UI', Inter, Arial, sans-serif; fill: #55524c; }
+  </style>
+  <rect class="bg" x="1" y="1" width="1198" height="558" rx="14"/>
+  <text class="title" x="48" y="82">Train YOLO on your own dataset</text>
+  <text class="sub" x="48" y="118">A step-by-step guide with tools you can run</text>
+
+  <!-- Row 1 -->
+  <g>
+    <rect class="box" x="48" y="160" width="244" height="130" rx="10"/>
+    <text class="num" x="68" y="192">01</text><text class="name" x="68" y="224">Plan</text>
+    <text class="what" x="68" y="254">classes, metric, data</text>
+    <text class="what" x="68" y="276">you need</text>
+    <path class="arrow" d="M296 225 H336"/><path class="head" d="M336 217 L350 225 L336 233 Z"/>
+
+    <rect class="box" x="352" y="160" width="244" height="130" rx="10"/>
+    <text class="num" x="372" y="192">02</text><text class="name" x="372" y="224">Collect and label</text>
+    <text class="what" x="372" y="254">varied images, tight</text>
+    <text class="what" x="372" y="276">boxes, YOLO format</text>
+    <path class="arrow" d="M600 225 H640"/><path class="head" d="M640 217 L654 225 L640 233 Z"/>
+
+    <rect class="box" x="656" y="160" width="244" height="130" rx="10"/>
+    <text class="num" x="676" y="192">03</text><text class="name" x="676" y="224">Layout and check</text>
+    <text class="what" x="676" y="254">data.yaml, label</text>
+    <text class="what" x="676" y="276">checker</text>
+    <path class="arrow" d="M904 225 H944"/><path class="head" d="M944 217 L958 225 L944 233 Z"/>
+
+    <rect class="key" x="960" y="160" width="192" height="130" rx="10"/>
+    <text class="num" x="980" y="192">04</text><text class="name" x="980" y="224">Split</text>
+    <text class="what" x="980" y="254">by source photo,</text>
+    <text class="what" x="980" y="276">no leakage</text>
+  </g>
+
+  <!-- Connector to row 2 -->
+  <path class="arrow" d="M1056 294 V322 H170 V350"/><path class="head" d="M162 350 L170 364 L178 350 Z"/>
+
+  <!-- Row 2 -->
+  <g>
+    <rect class="box" x="48" y="366" width="244" height="130" rx="10"/>
+    <text class="num" x="68" y="398">05</text><text class="name" x="68" y="430">Train</text>
+    <text class="what" x="68" y="460">fine-tune a pretrained</text>
+    <text class="what" x="68" y="482">YOLO11 model</text>
+    <path class="arrow" d="M296 431 H336"/><path class="head" d="M336 423 L350 431 L336 439 Z"/>
+
+    <rect class="box" x="352" y="366" width="244" height="130" rx="10"/>
+    <text class="num" x="372" y="398">06</text><text class="name" x="372" y="430">Evaluate</text>
+    <text class="what" x="372" y="460">precision, recall, mAP,</text>
+    <text class="what" x="372" y="482">per class</text>
+    <path class="arrow" d="M600 431 H640"/><path class="head" d="M640 423 L654 431 L640 439 Z"/>
+
+    <rect class="box" x="656" y="366" width="244" height="130" rx="10"/>
+    <text class="num" x="676" y="398">07</text><text class="name" x="676" y="430">Improve</text>
+    <text class="what" x="676" y="460">read the errors, fix</text>
+    <text class="what" x="676" y="482">data first</text>
+    <path class="arrow" d="M904 431 H944"/><path class="head" d="M944 423 L958 431 L944 439 Z"/>
+
+    <rect class="box" x="960" y="366" width="192" height="130" rx="10"/>
+    <text class="num" x="980" y="398">08</text><text class="name" x="980" y="430">Use</text>
+    <text class="what" x="980" y="460">predict, export</text>
+  </g>
+
+  <text class="note" x="48" y="534">Illustration of the workflow in this guide, not a screenshot. The highlighted step is where many projects go wrong.</text>
+</svg>

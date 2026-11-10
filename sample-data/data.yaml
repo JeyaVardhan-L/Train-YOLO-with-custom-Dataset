@@ -1,0 +1,7 @@
+path: sample-data
+train: train/images
+val: val/images
+names:
+  0: Aircrafts
+  1: Bird
+  2: Drone

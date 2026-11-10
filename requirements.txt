@@ -1,0 +1,9 @@
+# Install PyTorch first (see docs/05-set-up-environment.md), then:
+ultralytics>=8.3.0
+opencv-python>=4.8
+numpy>=1.24
+pyyaml>=6.0
+pillow>=9.5
+
+# Optional: only for scripts/hardware_trigger.py (Arduino serial trigger)
+# pyserial>=3.5
